@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML diagrammikeel</title>
+</head>
+<body>
+    <h1>UML diagrammikeel</h1><br/>
+    <br/><br/>
+    <h1>Mis on UML?</h1><br/>
+    <p>
+        UML on visuaalne modeleerimiskeel, mis aitab tarkvaraarenduses nii kliendile, arendajaile endile, kui<br/>
+        ka erinevatele muudele isikutele protsessi juures kuvada täpselt, milline arendatava toote sisemine<br/>
+        struktuur erinevatel tasanditel olema peaks. UML on aga ka haruskeel, ehk teisisõnu on erinevaid<br/>
+        diagrammiliike nende erinevate tasandite kuvamise jaoks väga palju. UML defineerib ära nende erinevate<br/>
+        tasandite diagrammide notatsioonid, keskendudes siis nendel spetsiifilistel tasemetel vajamineva<br/>
+        krijedusele. Tarkvaratoote käitumise kirjeldamiseks on näiteks käitumisdiagramm, Andmestruktuuri<br/>
+        krijeldamiseks on näiteks olemidiagramm (ERD). Ja nii, erinevate aspektide kohta. UMLe kasutatakse<br/>
+        nii ue arendustöö kirjeldamiseks, kui ka olemasoleva dokumenteerimiseks.
+    </p><br/><br/>
+    <h1>Kuidas UML tekkis?</h1><br/>
+
+    <p>
+        UML tekkis vajadusest kujutada objektorienteeritud prgrammeerimise jaoks ühtset keelt, mis kuvas<br/>
+        prtsessi ilma koodita. Algselt tekkis see kui Gradi Booch ja James Rumbaugh ühendasid oma diagrammikeeled<br/>
+        khu siis aja jooksul tekiski teisi harusid juurde. UML ise on akronüüm ingliskeelse terminist<br/>
+        "Unified Modeling Language"<br/>
+    </p><br/><br/>
+    <h1>Mida saab kujutada UMLiga - ehk kui palju diagrammide liike olemas on?</h1>
+    <p>
+        Erinevaid UML liike on palju, näiteks:
+        <ul>
+            <li><a href= "flowchart.html">Vooskeem (Flowchart)</li>
+            <li>Klassidiagramm (Class diagram)</li>
+            <li>Objektidiagramm (Object diagram)</li>
+            <li>Koostöödiagramm(Collaboration diagram)</li>
+            <li><a href="ERD.html">Olemidiagramm (Entity Relational Diagram)</li>
+            <li>Kasutuslooskeem (Use Case Diagram)</li>
+            <li>Olekuskeem (State Diagram)</li>
+            <li>Tegevusdiagramm (Activity Diagram)</li>
+            <li>Komponendi Diagramm (Component Diagram)</li>
+            <li>Kommunikatsiooni diagramm (Communication Diagram)</li>
+            <li>Ajastusskeem (Timing Diagram)</li>
+            <li>Jadaskeem (Sequence Diagram)</li>
+            <li>Levitusskeem (Deployment Diagram)</li>
+            <li>Paketiskeem (Package diagram)</li>
+            <li>Profiilidiagramm (Profile Diagram)</li>
+        </ul>
+    </p>
+    <h1>Mõningad UML liike</h1><br/>
+    <h2>Kasutuslooskeem</h2><br/>
+   
+    <p>
+        Kasutuslooskeem on visuaalne näidis, kuidas inimesed käituvad süsteemiga. Näidatakse funktsionaalseid vajadusi süsteemis ning kuidas inimesed käituvad eri kasutusjuhtumites.<br/>
+        See aitab arendajatele paremini aru saada, kuidas süsteem kasutajate poolt peab töötama ja kuidas eri protsessid on omavahel seotud. Selles skeemis on olemas näitleja, kasutusjuhtum<br/>
+        ja süsteemi piir. Näitlejad on need, kes käsitlevad kasutusjuhtumeid süsteemi piiris ning nad on kriipsujukud. Kasutusjuhtumid on tegevused, mis toimuvad ning mida teevad näitlejad süsteemis.<br/>
+        Nad on skeemis kujutatud ringi kujulisena. Süsteemi piir näitab, mis on süsteemi sees ja mis ei ole. Näitlejad on tavaliselt asuvad süsteemist väljaspool ning kasutusjuhtumid asuvad selle sees.<br/>
+        See on kujutatud skeemil ristkujulise kastina. Kasutuslooskeemil on kasutusel suhted, mida iseloomustavad eri jooned, mis ühendavad kasutusjuhtumeid ja näitlejaid. On olemas ühendussuhe, sisaldussuhe,<br/>
+        pikendussuhe ja üldistussuhe. Ühendussuhes kasutatakse tavalist sirget joont. See toimub näitleja ja kasutusjuhtumi vahel ning näitab, et näitleja on kaasatud selle kasutusjuhtumi funktsionaalsuses.<br/>
+        Sisaldussuhes kasutatakse puntiirlistjoonilist noolt, mis algab kaasavast kasutusjuhtumilt kaasatud kasutusjuhtumile ning tuleb märksõnaga "sisaldama". See toimub mitu kasutusjuhtumi vahel ning näitab, et üks<br/>
+        kasutusjuhtum sisaldab teise kasutusjuhtumi funktsionaalsust. Pikendussuhes ka kasutatakse punktiirjoonilist noolt, aga see tuleb koos märksõnaga "pikenda". See ka toimut mitu kasutusjuhtumi vahel ning näitab,<br/>
+        et kasutusjuhtumit saab pikendada kasutades teist kasutusjuhtumit teatud tingimustel. Üldistussuhes on jooneline nool, mis algab ühelt kasutusjuhtumilt ning liigub teisele kasutusjuhtumile ning näitab, et<br/>
+        üks kasutusjuhtumitest on spestialiseeritud versioon teisest.<br/>
+    </p><br/>
+
+    <img src="../pildid/Use-Case-diagram-of-an-Online-Shopping-System.webp">
+
+    <h2>Klassidiagramm</h2><br/>
+
+    <p>
+        Klassdiagramm näitab süsteemi struktuur toodes välja klassid, atribuudid, meetodid ning suhted omavahel. See kujutab tervik/osa suhtlust. Aitab aru saada, kuidas kõik on organiseeritud ning asjad üksteisega suhtlevad Klassid on kastid, millel<br/>
+        on kolm lahtreid klassi nime, atribuutide ja meetodite jaoks. Klassi nimi pandakse kõige ülemisele lahtrile kastis ning paikneb keskel ja on paksus kirjas. Atribuutid on omadused ning asuvad teises lahtris. Nad kujutavad<br/>
+        andmeliikmeid. Neil on näidatud nähtavus (märgistakse kasutades + e avalik, - e public, # e kaitstud ja ~ pakitud ning igal nendel märgistusel on oma tähendus) ja andmetüüp. Meetodid on funktsioonid või operatsioonid, mis<br/>
+        kujutavad klassi funktsionaalsust. Nad asuvad klassi kastil kolmandas lahtris ning neil on ka olemas nähtavus, tagastamise tüüp ja iga meetodi parameetrid (sisestus, väljastus, mõlemad). On olemas 8 suhte vormi ning need on<br/>
+        ühendussuhe, suunatud ühendussuhe, koondamissuhe, kompositsioonisuhe, üldistussuhe, teostussuhe, sõltuvussuhe, kasutamissuhe. Ühendussuhes kasutatakse lihstal sirgelist joont, millel vahest esineb ka valikuline nool ning see näitab,<br/>
+        et ühe klassi osad on ühendatud teise klassi osadega. Suunatud ühendussuhes kasutatakse sirgejoonelist noolt ning see näitab, et kahe klassi vahel on suund, tähistades et üks klass on seotud teise klassiga spetsiifilisel viisil.<br/>
+        Koondamissuhes on kasutatakse sirgejoont, millel on rombi kujuline ots, mis liigub osalisest klassis terviku klassi ning see tähistab suhet, kus üks tervik klass sisaldab või koosneb teisest osalik klassist. Osalik klass selles suhes saab eksisteerida<br/>
+        iseseisvalt ilma tervik klassist. See on tugevam ühendus vorm. Kompositsioonisuhe kasutab sirgetjoont, millel on tumedalt täidetud rombikujuline ots ning liigub tervik klassis osaliku klassile. See on tugevam koondamis vorm, kus osalik klass ei saa eksisteerida iseseisvalt ilma<br/>
+        terviku klassita. Üldistussuhes (pärand) kasutatakse sirgelistjoont, millel on suletud täitmata nool ning liigub osaliku klassist terviku klassi. Üks osalik klass pärib terivku klassi omadused. Teostussuhes (liides rakendamine) kasutatakse katkendlikjoon, millel on suleutd täitmata nool.<br/>
+        Teostussuhes klass rakendab liidese funktsioone. Kasutatakse, kui klass teostab operatsioone, mida liidese poolt oli ettenähtud. Sõltuvussuhes kasutatakse katkendlik joon ning mitte suletud nool. See tekib, kui üks klass loodab toetust teise klassilt, aga suhe ei ole piisavalt tugev nagu ühendus-<br/>
+        või üldistussuhes. See kujutab lahtist ühendust klasside vahel. Kasutamissuhes kasutatakse katkendlikku joont noolega, mis liigub klient klassist pakkuja klassile. Nool kujutab sõltuvuse suuna, näidates klient klassi sõltuvuse teenustele, mida pakkuja klass pakub. Kasutussuhe näitab, et üks klient klass<br/>
+        kasutab ning sõltub pakkuja klassist, et teha spetsiifilisi ülesandeid või saada ligipääs konkreetsetele funktsionaalsustele. Klient klass sõltub pakkuja klassi teenustest, aga klient klass ise ei koosta ega oma neid.<br/>
+    </p><br/>
+
+    <img src="../pildid/Class-Diagram-example.webp">
+
+
+    <h2>Jadaskeem</h2><br/>
+    <p>
+        Jadaskeem kasutatakse koostoimimise visualiseerimiseks objektide vahel järjestikulises järjekorras. Keskendub sellele, kuidas objektid suhtlevad omavahel aja jooksul. Jadaskeem näitab objektide koostoime, operatsioonide järjestust, mis teeb kasutusjuhtumi, sõnumite vood, süsteemi arhitektuuri disainimist ning keeruliste<br/>
+        protsesside dokumentatsiooni lihtsamini mõista. Jadaskeem koosneb näitlejatest, päästenöörist ning sõnumitest. Näitlejad käsitlevad süüsteemit ja selle objekte. Näitlejad asuvad kogu aeg süsteemist väljaspool. Nad on kujutatud kriipsujukuna. Päästenöör on element, mis kujutab individuaalset osalejat jadaskeemis. Iga objekt<br/>
+        jadaskeemis kujutab päästenöör. Päästenöör asub jadaskeemi tipus ning on ristkülikulises kujust kutsutud peaks , millel on kirjas nimi ja tüüp ning on vertikaalsest katkendliku joonest üleval pool. Vahe päästenööri ja näitleja vahel on see, et päästenöör kujutab objekti süsteemi sees, aga näitleja on kasutatud et kujutada objekte<br/>
+        väljaspool süsteemilt. Sõnumite abil kujutatakse kommunikatsiooni objektide vahel. Sõnumid on järjestikulises järjekorras päästenööril. Sõnumid on kujutatud noolega. Koos päästenööridega nad iseloomustavad jadaskeemi põhja funktsionaalsust. Sõnumeid on erinevates vormides ning need on sünkroonne, asünkroonne, loomis sõnum, kustutus<br/>
+        sõnum, enese sõnum, vastussõnum, leitud sõnum, kaotud sõnum ja valvurid.  Sünkroonne sõnum ootab vastus enne koostoime saab edasi minna. Kasutatakse kindel noolepead et kujutada sunkroonnset sõnumit. Asünkroonne sõnum ei oota kuni vastus tuleb vastuvõtjalt ning koostoime lihtsalt liigub edasi. Kasutatakse vooderdatud noolepea, et<br/>
+        kujutada asünkroonnset sõnumit. Loomis sõnum kujutab uue objekti jadaskeemis. On situatsiooni, kus konkreetne sõnumikõne vajab objekti loomist. Kasutatakse  punktiir noolt ja luua sõna on märgistatud, et on loomis sõnumi sümbol. Kustutamis sõnumis kustutatakse objekti. Kui objekt on hävitatud süsteemis, siis kasutatakse kustutus<br/>
+        sõnumi sümbolit. Seda iseloomustab nool, mis lõppeb x-ga. Enesesõnumis objekt saadab endale sõnumi. Selline sõnumit iseloomustad U kujuline nool. Vastussõnumid kasutatakse selles, et näidata sõnumit mida vastuvõtja on saatnud saatjale. Vastussõnumit iseloomustab katkendjoonega avatud noolepea. Leitudsõnum kasutatakse stsenaariumis,<br/>
+        teadmata üksus saadab sõnumit. Seda iseloomustab nool mis on suunatud päästenööri poole lõpp punktist. Kaotatud sõnum on kasutatud stsenaariumil, kus saaja ei ole teada süsteemis. Seda iseloomustab nool, mis on suunatud päästenöörist lõpp punktile. Tingimuste koostmiseks kasutatakse valvurid. Kasutatakse ku on vaja piirata sõnumite<br/>
+        voogu tingimuse täitmise ettekäändel. Valvurid teatavad tarkvaraarendajatele lisatud piirangutest süsteemil.<br/>
+    </p><br/>
+
+    <img src="../pildid/Example-sequence-diagram-2.jpg">
+
+    <h2>Olekuskeem</h2><br/>
+    <p>
+        Olekuskeem kasutatakse süsteemi oleku kujutamiseks või osa süsteemist lõplik ajaga. See on käitumis diagramm ja see kujutab käitumise kasutades piiratud oleku üleminekut. Olekuskeem kasutatakse dünaamilise käitumise moodustamiseks klassile reageerides ajale ja olukordadel mis tekitab süsteemi oleku muudatuse ühest teisele. Olekuskeem<br/>
+        koosneb  esialgsest olekust, üleminekust, olekust, harusmärge, liitumismärge, eneseüleminekust, komposiitolek ja lõpp olekust. Esialgne olek on must täidetud ring, mis näitab esialgset olekut süüstemil või klassil. Üleminekul kasutatakse kindel nool, et näidata üleminekut või kontrolli muudatust ühest olekust teise. Nool on märgistatud<br/>
+        sündmusega, mis tekitab oleku muudatuse. Olekus kasutatakse ümar ristkülikut, et iseloomustada olekut. Olek näitab klassi objekti tingimused ajahetkel. Harumärge on tahke ümar ristkülikukujuline riba koos sissetulev noolega vanem olekult ning väljuvad nooled uutele koostatud olekutele. Harumärge kasutatakse selleks, et kujutada oleku poolitamist<br/>
+        kahteks või rohkem samaaegsetest olekutest. Liitumismärges kasutatakse tahke ristkülikukujulist riba koos sissetulevate nooletega liitumisolekutelt ning väljuvad nooled liiguvad ühise eesmärgi oleku poole. Kasutatakse liitumismärget, kui kaks või rohkem olekud samaaegselt lähenevad sündmuse või sündmuste toimumise korral üheks. Eneseüleminekus<br/>
+        kasutatakse kindel noolepea, mis osutab tagasi enda oleku juurde, et kujutada eneseüleminekut. Võib olla tekkivad stsenaariumid, kui objekti olek ei muutu sündmuse juhtumisel. Komposiitoleku iseloomustamiseks  kasutatakse ümar ristküliku. Olekus, millel on sisemsied tegevused, kasutatakse ka komposiitolekut. Lõpp olekus kasutatakse must täidetud<br/>
+        ring, mis on ringimärge sees, et kujutada lõpp oleku selles skeemis.<br/>
+    </p><br/>
+
+    <img src="../pildid/state-machine-diagram-for-an-online-order.jpg">
+
+    <h2>Profiili diagramm</h2><br/>
+    <p>
+        Profiili diagramm laseb koostada stereotüüpe, märgistatud väärtused, piirangud mis laiendavad tavalisi UML elemente, seetõttu toodes veel täpse süsteemi vajaduste iseloomustust. Kokkuvõttes, profiili diagramm täiustab modelleerimis täpsust, järjepidevust ja kommunikatsiooni tarkvaraarenduses. Profiil diagramm koosneb profiilist, stereotüüpidest, metaklassist,<br/>
+        märgistatud väärtustest, piirangutest ja laiendustest. Profiil on peamine konteiner diagrammil mis kujutab stereotüüpide, märgistatud väärtuste ja laienduste kogumiku. See on laienduse mehhanism, et kasutada UML konkreetse eesmärkide jaoks. Stereotüübid defineerivad uued tüüpi mudeli elemente või kohandavad olemasolevaid. Nad on tähistatud kasutades külgsuunas<br/>
+        topeltševronid nime vahel (topelt nurgad mõlemal pool nime vahel). Näiteks sõna Entity või Service, mida saab rakendada klassidele ja komponentidele, et anda neile konkreetsed tähendused või käitumised üle tavalise UML võime. Metaklassid on tavalised UML elementid naug klassid, liidesed, komponentid, millele stereotüübid saab rakendada. Profiil diagrammis, need<br/>
+        tavalised UML elementid näidatakse et selgitada kuidas stereotüübid on rakendatud nendel. Stereotüübidel võib olla seotud märgistatud väärtused, mis toovad lisa informatsiooni või omadusi spetsiifiliselt nendele stereotüübidel. Näiteks, Entity stereotüübil võib olla märgistatud väärtused nagu tableName või persistent. Piirangud määratleb reegleid või tingimusi mis<br/>
+        kohaldakse elementidel, mis on mõeldud spetsiifilise stereotüüpile. Nad on väljendatud ametlik keeles nagu OCL (objektipiirangu keel) ja tagab, et mudel järgib profiilis määratletud konkreetseid reegleid. Laiendused näitavad kuidas stereotüübid laiendavad tavalise UML metamudeli elemente. Sed saab iseloomustada suhena stereotüübi ja metklassi, mida see laiendab.<br/>
+        Näiteks, stereotüüp Entity võib olla laiendab class metaklassi.<br/>
+    </p><br/>
+
+    <img src="../pildid/ExampleProfileDiagram-1024.webp">
+
+    <h2>Viited:</h2>
+
+    <p>
+      Kasutuslooskeem :  <a href="https://www.geeksforgeeks.org/system-design/use-case-diagram/">geeksforgeeks</a><br/>
+      Klassdiagramm : <a href="https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-class-diagrams/">geeksforgeeks</a><br/>
+      Jadaskeem : <a href="https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-sequence-diagrams/">geeksforgeeks</a><br/>
+      Olekuskeem : <a href="https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-state-diagrams/">geeksforgeeks</a><br/>
+      Profile diagramm : <a href="https://www.geeksforgeeks.org/system-design/profile-diagram-unified-modeling-languageuml/">geeksforgeeks</a><br/>
+    </p>
+</body>
+</html>
