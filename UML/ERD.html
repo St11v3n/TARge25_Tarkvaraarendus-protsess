@@ -6,40 +6,76 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Mis on ERD, kus seda kasutatakse?</h1>
+    <h1>Mis on ERD diagrammid?</h1>
+    <p>
+        ERD diagrammid näitavad andmebaasi loogilist struktuuri, milles sisaldavad üksused, nende atribuutid ja suhed nende vahel.<br/>
+        Üksus on objekt, mis on salvestatud andmena. Atribuut on omadus, mis kirjeldab üksust. Suhe on ühendus üksuste vahel.<br/>
+        Ristkülikuga tähistatakse üksuseid, ellipsidega atribuute, rombidega suhed üksuste vahel, jooned ühendavad atribuute,<br/>
+        üksuseid ja suhteid. Topelt ellips on mitme väärtusega ellipse ning topelt ristkülik on nõrk üksus. Üksus kujutab päris<br/>
+        maailma objekti (inimene, auto, töötaja), kontsepti (sündmus, kursus ) või asja (dokument, toode, seade) kohta, millest<br/>
+        andmed on salvestatud andmebaasis. See on ehitusplokk andmebaasis. Üksuse tüüp kirjeldab üksuse struktuuri, samal ajal<br/>
+        individuaalsed näited selles tüübis kujutavad spetsiifilisi üksuseid. Üksus on individuaalne objekt üksusetüübis ning kogum,<br/>
+        mis sisaldab kõik konkreetse üksusetüübi üksuseid nimetatakse üksuse komplektiks. On olemas kaks tüübi üksuseid. Tugev üksusel<br/>
+        on olemas põhi atribuut, mis saab üheselt tuvastada igat teist üksust. Tugev Üksus ei sõltu teistest üksustest skeemil enda<br/>
+        identifitseerimiseks. Temal on olemas peamine võti, mis tagab ainulaadsuse ja on kujutatud ristkülikuna digrammil. Nõrk üksus<br/>
+        ei saa ainulaadselt olla identifitseeritud enda atribuutide kaudu. Tema sõltub tugevast üksusest, et saada identifitseeritud.<br/>
+        Nõrk üksus on seotud tugeva üksusega, mis aitab tema identifitseerimisel. Nõrga üksust iseloomustab topelt ristkülik. Nõrkade<br/>
+        üksuste tüüpide osalemine on alati täielik. Suhe nõrga üksuse ja tugeva üksuse vahel on kutsutud tuvastamissuheks ja on kujutatud<br/>
+        topelt rombiks. On olemas mitu tüüpi atribuute. Võti atribuut identifitseerib igat üksust üksuse komplektis. Komposiit atribuut on koostatud<br/>
+        mitmetest atribuutidest. Mitme väärtusega atribuut koosneb rohkem kui ühest väärtusest andtu üksuse jaoks. Tuletatud atribuuti<br/>
+        saab tuletada teistest atribuutidest üksuse tüübist. On olemas mitu tüübi suhteid ka. Ühetaoline suhe on kui üks üksuse komplekt võtab osa  suhtes.<br/>
+        Binaarne suhe on kui kaks üksuste komplekte võtnud osa suhes. Kolmekordne suhe on kui kolm üksuste komplekte on võtnud osa suhes. On olemas ka suhe,<br/>
+        kus ükskõik ku palju üksuste komplekte esinevad suhtluses. Kardinaalsus on see kui palju kordi üksuks üksuse komplektis osaleb<br/>
+        suhe komplektis.
+    </p>
+
+    <h2>Kus neid kasutatakse?</h2>
 
     <p>
-        Olemi seoste diagramm (ERD) on visuaalne disain, mis aitab iseloomustada andmebaasi struktuuri.<br/>
-        See annab parema arusaama andmebaasi tegelikku füüfilistest objektidest ja omadustest ning nende<br/>
-        omaduste vahelistest seosest. Need pakuvad loogilist viisi süsteemi struktuuride kaardistamiseks, mis<br/>
-        võimaldaks andmebaaside disaineritel luua seoseid. Samamoodi kasutatakse ER diagramme enamasti andmebaaside<br/>
-        kujundamisel, et näidata, kuidas üksused üksteisega seotud on. 
-    </p><br/>
+        ER diagramme kasutatakse tarkvara inseneritöös, äriinfosüsteemides. Tänapäeval kasutatakse ka õpilastele andmebaasi struktuuri.<br/>
+        õpetamiseks.
+    </p>
 
-    <h1>Mis on Primary Key, Foreign Key, Composite Key ja lihtsalt Key?</h1>
+    <h2>Toob välja eraldi joonistega ühenduselemendid, nende seletuse, otsade tähendused</h2>
 
     <p>
-       Primary key ehk peaminevõti on valitud kandidaatvõti, mida kasutatakse kirjete unikaalseks tuvastamiseks. See peab<br/>
-        olema unikaalne ja mitte tühi.
-    </p><br/>
+        Sümbolid ER diagrammis: <img src="../pildid/Introduction-to-ER-Model-2-768.webp"><br/>
+        Kardinaalsus ER diagrammis: <img src="../pildid/ER-Diagram-Cardinality.webp"><br/>
+
+    </p>
+
+    <h2>Seletab lahti mis olemitabelis olema peab ja olla saab</h2>
 
     <p>
-        Foreign key ehk võõrvõti Ühe üksuse atribuut, mis viitab teise üksuse primaarvõtmele. 
-    </p><br/>
+        Olemitabelis on vaja üksust, mida iseloomustab ristkülik. Siis selle üksuele on vaja atribuutid, mis iseloomustavad seda üksust, mis tähtistatud<br/>
+        eliipsidena. Üks tähtsam nendest on võti atribuut, mis identifisteerib igat üksust üksuse komplektis ainulaadselt. On vaja ka suhted, mis üksusi ühendab.<br/>
+        Neid tähistatakse rombiga. Kardinaalsus aitab aru saada, kuidas üksused omavahel suhtlevad suhes.
+    </p>
+
+    <h2>Kirjeldab ära ka mis on Primary Key, Foreign Key, Composite Key, ja lihtsalt Key?</h2>
 
     <p>
-        Composite key ehk liitvõti on võtmetüüp, mis koosneb kahest või rohkem atribuutidest.
-    </p><br/>
+        Primary Key on on atribuut, mis annab igale üksusele üksuskomplektis enda ainulaadne identifikatsioon. Foregin Key on atribuut, mis on teise üksuse jaoks peetud<br/>
+        Primary Key-ks, aga enda üksuse jaoks on see lihstalt uks selleks, et see üksus saaks moodustada suhet selle teise üksusega. Composite key on atribuut, millele on<br/>
+        ühendatud mitu atribuute. Võti on atribuut, millel on ainulaadne omadus.
+    </p>
+
+    <h2>Väljendab kuidas neid koos olemitabelitega kasutatakse</h2>
 
     <p>
-        
-    </p><br/>
+        Primary Key kasutatakse üksustele nime andmist üksusekomplektis, et igaüks oleks üksteisest ainulaadne. Foreign Key on nagu koopia teise üksusetabeli Primary Key-st, aga tema<br/>
+        teeb üksuste tabelite suhe tegemist võimalikuks.
+    </p>
 
     <h2>Viited:</h2>
 
     <p>
-       Olemi seose diagrammi kirjeldus ning kus kasutatakse: <a href="https://www.geeksforgeeks.org/dbms/difference-between-uml-and-er-diagram/">geeksforgeeks</a>
-       Primary key: <a href="https://chartdb.io/blog/what-is-an-er-diagram">chartdb</a>
+        Mis on ERD diagrammid: <a href="https://www.geeksforgeeks.org/dbms/introduction-of-er-model/">geeksforgeeks</a><br/>
+        Kus need diagrammid kasutatakse : <a href="https://en.wikipedia.org/wiki/Entity–relationship_model">wikipedia</a><br/>
+        Joonte otsade nimetused: <a href="https://www.functionly.com/orginometry/org-charts/what-is-an-entity-relationship-diagram-and-how-do-they-work">functionly</a><br/>
+        Keys: <a href="https://www.lucidchart.com/blog/er-diagram-symbols-and-notation">lucidchart</a><br/>
+
     </p>
+
 </body>
 </html>
