@@ -22,7 +22,7 @@
         <p>
             Konstruktsioon etappis arendajad kirjutavad ning organiseerivad koodi, kasutades versioonkontrolli tööriistad<br/>
             nagu Git muudatuse jälgimiseks. Süsteemi automaatselt koostab ning pakendab koodi kasutuselevõetavas formaadis.<br/>
-            Sõltuvused on lisatud, et tagada sujuvat operatsiooni. Ühised tööristad, mida kasutataks on näiteks Git, Jenkins, Gitlab.<br/>
+            Sõltuvused on lisatud, et tagada sujuvat operatsiooni. Levinud vahendid, mida kasutataks on näiteks Git, Jenkins, Gitlab.<br/>
         </p><br/>
 
         <p>
@@ -31,7 +31,132 @@
             Üksuse testimisel knotrollitakse üksikud koodi osasid. Integratsiooni testimisel tagatakse, et eri osad süsteemil<br/>
             töötavad koos. Jõudluse testimisel mõõdetakse kiirust ning skaleeritavus. Turvalisuse testimisel tuvastakse<br/>
             potentsiaalseid haavatavused. Kasutatksed ka automatiseeritud teste, mis aitavad tagada, et tarkvara on stabbilne<br/>
-            liikudes edasi. Ühised tööriistu, mis kasutatkse etappil on JUnit, Selenium, TestNG.
+            liikudes edasi. Levinud vahendid, mis kasutatkse etappil on JUnit, Selenium, TestNG.
+        </p><br/>
+
+        <p>
+            Väljastamis etappis, tarkvara on kasutusele võetud lavastuskeskkonnas, et simuleerida reaalseid tingimusi. Kui kõik on<br/>
+            korras, tarkvara on viidud tootmisele kasutades kasutuselevõtu strateegiaid nagu sinine-roheline kasutuselevõtt, kanaari<br/>
+            kasutuselevõtt ja jooksvad uuendused. Sinine - roheline kasutuselevõttus, kaks identset keskkonda vahetavad liiklust sujuva<br/>
+            värskenduse tagamiseks Kanaari kasutuselevõttus, väike protsent kasutajad saavad uue versiooni esimesena, ohutuse tagamiseks.<br/> 
+            Jooksvad uuendustes, uuendus on järk-järgult välja toodud kõikidele kasutajatele. Levinud tööriistad on Docker, Kubernetes, Ansible, Helm.<br/> 
+        </p><br/>
+
+        <p>
+            Pidev tagasiside ahel etappis õppitakse pärismaailma jõudlusest ning kasutatakse seda tagasisidet, et täiendada tuleivku väljustamist.<br/>
+            Järgitakse süsteemi jõudlust ning püütakse märgata vigasid. Kogutakse arusaamu klientidelt, et funktsioone paremaks teha. Kasutatakse<br/>
+            hoiatussüsteemid, et teatada meeskonda vigadest, et nad saaksid teha kiiret lahendust. Meeskonnad analüüsivad varem väljustamisi, et<br/>
+            optimeerida automatiseerimist ja töövoogu. Levinumad vahendid  on Prometheus, Grafana, Datadog.
+        </p><br/>
+
+        <h2>Kas arendusmudelil on alamvariante?</h2><br/>
+
+        <p>
+            Jah, arendusmudelil on olemas alamvariante. Näitena on seitse.
+        </p><br/>
+
+        <p>
+            DevSecOps on pideva turvatestimise kaasamine tarkvaraarenduse elutsükli kõikidesse etappidesse. Arendus-, turbe- ja operatsioonimeeskonnad jagavad<br/>
+            vastutust turvalise tarkvara loomise eest.
+        </p><br/>
+
+        <p>
+            BizDevOps on alamvariant, mis optimiseerib tarkvara arendus elutsükli tehes koostööd äri, arendus ning operatsioon meeskonna vahel.
+        </p><br/>
+
+        <p>
+            AIOps on protsess, kus kasutatakse AI, et paremaks teha ning automatiseerida IT operatsioone, analüüsides suur osa andmeid, mis on kogutud mitmesugustest<br/>
+            DevOps seadmetelt ning vahenditelt, automaatselt tuvastades ning vastates vigadele reaalajas.   
+        </p><br/>
+
+        <p>
+            GitOps on alamvariant, kus kasutatakse Git ainus tõeallikana, kuhu soovitud konfiguratsiooniolek on salvestatud. Operatsioone automatiseeritakse kasutades Git.
+        </p><br/>
+
+        <p>
+            DataOps on koostööpõhine andmetehaldus praktikad mõeldud kiire kohaletoimetamise, kvaliteedi haldamine, meeskondadevahelist kooskõla edendamine ning maximum väärtuse<br/>
+            genereerimine andmetest. 
+        </p><br/>
+
+        <p>
+            NoOps on protsess, kus kasutatakse täiustatud automatiseerimistööriistad ing AI, et minimiseerida inimese sekkumist. Traditsioonilised operatiivülesanded, nagu serveri<br/>
+            jälgimine, hooldus ja turvalisus, on kõik automatiseeritud.
+        </p><br/>
+
+        <p>
+            DevTestOps on alamvariant, mille peamine ülesanne on kaasata DevOps protsessi pidev testimist, rõhutades testimisprotsessi olulisust. Sel viisil on testijatest saanud<br/>
+            tarkvaraarenduse põhiliikmed ning nende testimistegevus on oluline kogu arendusprotsessis, nagu ka arendajate ja operatsiooniinseneride jaoks.
+        </p><br/>
+
+        <h2>Milline näeb välja arendusmudel joonisena?</h2><br/>
+
+        <p>
+            Joonis: <img src="../pildid/DevOps.png">
+        </p><br/>
+
+        <h2>Mis on arendusmudeli tähtsaim omadus, ja miks?</h2><br/>
+
+        <p>
+            DevOps arendusmudeli tähtsaim omadus on koostöö, sest arendusmeeskond ning operatsioonimeeskond töötavad koos ning neil on jagatud vastatus. Mõlematel meeskonnatel on sama arusaam tarkvarast<br/>
+            ning seetõttu konflikte ei tekki sest mõlemad meeskonnad pidevalt töötavad koos omavahel.
+        </p><br/>
+
+        <h2>Võta arendusmudel kokku Heade ja Veade tabelina.</h2><br/>
+
+        <table>
+            <thread>
+                <tr>
+                    <th>Head:</th>
+                    <th>Vead:</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>Paranenud koostöö;</td>
+                    <td>Turvaprobleemid;</td>
+                </tr>
+
+                <tr>
+                    <td>Kiire kohaletoimetamine;</td>
+                    <td>Esialgsed rakendamise väljakutsed;</td>
+                </tr>
+
+                <tr>
+                    <td>Suurenenud efektiivsus;</td>
+                    <td>Tööriistaahela keerukus;</td>
+                </tr>
+
+                <tr>
+                    <td>Hea klientide rahulolu;</td>
+                    <td>Pidev jälgimine ja haldavus;</td>
+                </tr>
+
+                <tr>
+                    <td>Hea ressursside kasutamine;</td>
+                    <td>Juurdepääsu kontroll ja luba;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+
+
+
+        <h2>Viited:</h2><br/>
+
+        <p>
+            DevOps arendusmudel: <a href="https://www.geeksforgeeks.org/devops/introduction-to-devops/">geeksforgeeks</a><br/>
+            DevSecOps: <a href="https://jfrog.com/learn/devsecops/devsecops/">jfrog</a><br/>
+            BizDevOps: <a href="https://www.ibm.com/think/topics/bizdevops">ibm</a><br/>
+            AIOps: <a href="https://en.wikipedia.org/wiki/AIOps">wikipedia</a><br/>
+            GitOps: <a href="https://www.ibm.com/think/topics/gitops">ibm</a><br/>
+            DataOps: <a href="https://www.ibm.com/think/topics/dataops">ibm</a><br/>
+            NoOps: <a href="https://dev.to/get_pieces/devops-vs-noops-what-is-the-future-of-operations-3f27">dev</a><br/>
+            DevTestOps: <a href="https://sipsa.medium.com/what-is-devtestops-c64b2732a5da">sipsa</a><br/>
+            Mis on tähtis DevOpsis: <a href="https://graphite.com/guides/what-is-devops-and-why-it-is-important">graphite</a><br/>
+
+
+
         </p><br/>
 </body>
 </html>
