@@ -73,55 +73,58 @@
 
         <p>
             1. Testipõhine arendus (TDD) on tarkvara arendus protsess, mis tugineb ühiku testi juhtumite koostamisel enne päris koodi arendamist. See on iteratiivne lähenemine, mis<br/>
-            kombineerib kolm operatsiooni, programmimist, ühiku testi loomist ning refaktoreerimine.
+            kombineerib kolm operatsiooni, programmimist, ühiku testi loomist ning refaktoreerimist. Kasu on sellest, et saadakse vigasid tuvastada enne tegelikku koodi arendamist.
         </p><br/>
 
         <p>
             2. Käitumisepõhine arendus (BDD) on tarkvara arendusprotsess, mille eesmärk on dokumenteerida ning arendada rakendust vastavalt kasutaja käitumisele, mida kasutaja rakenduse<br/>
-            kasutamisel ootab. See julgustab koostöödd arendaja, kvaliteedi eksperdi ning kliendi esindajate vahel.
+            kasutamisel ootab. See julgustab koostöödd arendaja, kvaliteedi eksperdi ning kliendi esindajate vahel. Kasu on sellest, et saadakse paremini aru kasutaja vajadustest,<br/>
+            jälgides nende käitumistele.
         </p><br/>
 
         <p>
             3. Vastuvõtutestipõhine arendus (ATDD) on koostöö protsess, kus kliendi esindajad, arendajad ning testijad tulevad koos, et arutada vajadused, võimalikud lõksud ning vähendada<br/>
-            võimalust probleemidele enne koodi alustamist.
+            võimalust probleemidele enne koodi alustamist. Kasu on sellest, et kliendi esindajate abil koos teiste meeskondadega pantakse paika vajadused ning mõeldakse<br/>
+            takistuste peale, mis võivad esineda ja ka lahendus nendele.
         </p><br/>
 
         <p>
             4. Pidev testipõhine arenduses (CTDD), arendaja kirjutab testi alguses, aga ei ole sunnitud täitma testi ise. Testid käivad automaatselt kasutades pidevat testimis tööriista, mis käib<br/>
-            taustal. See võib vähendada aja raiskamist, mille tulemusena ei vaja arendajat testi alustamiseks peale igat faasi normaalses testipõhises arenduse praktikas.<br/>
+            taustal. See võib vähendada aja raiskamist, mille tulemusena ei vaja arendajat testi alustamiseks peale igat faasi normaalses testipõhises arenduse praktikas. Kasu on sellest, et<br/>
+            saadakse pidevat tagasisidet, mille tõttu kulutatakse vähem aega sest arendaja ei pea seda manuaalselt ise tegema.
         </p><br/>
 
         <p>
-            5. Andmetepõhine arendus (DDD) on protsess, kus koostakse tarkvarat, mis tugineb andmetele, et suunata toode disaini, rakendamine ning testimine. See tähendab, et andmeid kasutatakse otsuste<br/>
-            tegemiseks, eelduste kinnitamine, tulemuste mõõtmine ning protsesside optimeerimine. See tähendab ka seda, et kogutakse ning analüüsitakse andmeid kasutajatelt, klientidelt, konkurentidelt,<br/>
-            ning turult et aru saada nende vajadustest, eelistustest ja k'itumistest.
+            5. Andmetepõhine arendus (DDD) on protsess, kus koostakse tarkvarat, mis tugineb andmetele, et suunata toode disaini, rakendamise ning testimisele. See tähendab, et andmeid kasutatakse otsuste<br/>
+            tegemiseks, eelduste kinnitamine, tulemuste mõõtmiseks ning protsesside optimeerimiseks. See tähendab ka seda, et kogutakse ning analüüsitakse andmeid kasutajatelt, klientidelt, konkurentidelt,<br/>
+            ning turult et aru saada nende vajadustest, eelistustest ja käitumistest. Kasu on sellest, et on olemas andmebaas, mille kaudu saab otsuseid langetada.
         </p><br/>
 
         <p>
             6. Andmetele orienteeritud disain (DOD) on tarkvara disain lähenemine, mis keskendub andmete ograniseerimisele viisil, mis teeb sellele ligipääsu ja selle käsitsemise lihtsaks. See põhinen ideel, et<br/>
-            andmed peavad olema peamine fookus programmis, pigem kui operatsioonid ja teisendused täidetud andmetes.
+            andmed peavad olema peamine fookus programmis, pigem kui operatsioonid ja teisendused täidetud andmetes. Kasu on sellest, et vajalikud andmed millegi tegemiseks on lihtne kasutusele võtta.
         </p><br/>
 
         <p>
             7. Disainilt turvaline (SbD) on tarkvara ja riistvara arendamise lähenemisviis, mille eesmärk on muuta süsteemid võimalikult haavatavustevabaks ja rünnakukindlaks selliste meetmete abil nagu pidev<br/>
             testimine, autentimiskaitsemeetmed ja parimate programmeerimistavade järgimine. Keskendudes toodete turvalisuse sisseehitamisele on vastuolus liigagi levinud kalduvusega jääda arenduses tagaplaanile.<br/>
             Olemasolevate haavatavuste ja turvaaukude parandamine nende avastamisel võib olla ebaühtlane protsess ning ei ole kunagi nii tõhus kui süsteemide algusest peale võimalikult turvaliseks kujundamine.<br/>
+            Kasu on sellest, et algusest peale tarkvara on turvaline ning see turvalisus ainult kasvab ajaga.
         </p><br/>
 
         <p>
-            8. Spetsifikatsioon näide kaudu (SbE) on koostööl põhinev lähenemisviis tarkvaratoodete nõuete määratlemisele ja ärikesksetele funktsionaalsetele testidele, mis põhineb nõuete jäädvustamisel ja illustreerimisel<br/>
-            realistlike näidete, mitte abstraktsete väidete abil. See lähenemisviis on eriti edukas nõuete ja funktsionaalsete testide haldamisel suuremahulistes projektides, millel on märkimisväärne valdkonna ja<br/>
-            organisatsiooni keerukus.<br/>
+            8. Spetsifikatsioon näide kaudu (SbE) on protsess, kus täpselt määratletakse nõuded reaalsete näidete abil, minimeerides vigade ja arusaamatuste riski. Kasu on sellest, et see võimaldab<br/>
+            arendusmeeskondadel tõhusamalt töötada ja tootel paremini vastata kasutajate ootustele.
         </p><br/>
 
         <p>
-            9. Domeenipõhine disain (DDD) on meetod, mis prioritiseerib spetsiifilise probleemi ala arusaamist ning modelleerimist kus süsteemi tarkvara toimib. See rõhutab vajadust tiheda koostöö järele valdkonna ekspertidega,<br/>
+            9. Domeenipõhine disain (DDD) on meetod, mis prioritiseerib spetsiifilise probleemi ala arusaamist ning modelleerimist kus süsteemi tarkvara toimib. Kasu on sellest, et  see rõhutab vajadust tiheda koostöö järele valdkonna ekspertidega,<br/>
             et saada põhjaliku arusaam valdkonna üksikasjadest ja keerukusest. See meetod pakub põhimõtted, mustrid ja tavad, mis aitavad arendajatel oma tarkvaradisainis valdkonna kontseptsioone täpselt tabada ja esitada.<br/>
         </p><br/>
 
         <p>
-            10. Disainipõhine arendus kasutab disaini osana protsessist, mille eesmärk on õppida ja paremini määratleda nõudeid, et luua paremaid ja teadlikumaid tehnoloogilisi lahendusi. Seda vib vaadelda ka kui protsessi, kus<br/>
-            disain ja kasutajakogemus juhivad toote või tarkvararakenduse arendamist. See viib toodeteni, mida inimesed naudivad ja millest nad tahavad teistele rääkida.<br/>
+            10. Disainipõhine arendus kasutab disaini osana protsessist, mille eesmärk on õppida ja paremini määratleda nõudeid, et luua paremaid ja teadlikumaid tehnoloogilisi lahendusi. Seda võib vaadelda ka kui protsessi, kus<br/>
+            disain ja kasutajakogemus juhivad toote või tarkvararakenduse arendamist. Kasu on sellest, et see viib toodeteni, mida inimesed naudivad ja millest nad tahavad teistele rääkida.<br/>
         </p><br/>
 
 
@@ -186,7 +189,7 @@
         Andmetepõhine arendus (DDD): <a href ="https://www.capicua.com/blog/data-driven-development">capicua</a><br/>
             DOD: <a href ="https://arpanext.medium.com/a-comprehensive-guide-to-data-oriented-design-for-improved-software-efficiency-6434d520d0e4">medium</a><br/>
             SOD: <a href ="https://www.techtarget.com/whatis/definition/security-by-design">techtarget</a><br/>
-            SbE: <a href ="https://en.wikipedia.org/wiki/Specification_by_example">wikipedia</a><br/>
+            SbE: <a href ="https://procognita.com/training/specification-by-example/">procognita</a><br/>
             Domeenipõhine disain (DDD): <a href ="https://www.geeksforgeeks.org/system-design/domain-driven-design-ddd/">geeksforgeeks</a><br/>
             Disainipõhine arendus (DDD): <a href="https://blog.prototypr.io/design-driven-development-36a30dd8088c">prototypr</a><br/>
             Head ja Vead: <a href="https://groovetechnology.com/blog/methodologies/agile-advantage-and-disadvantages/#:~:text=This%20comprehensive%20analysis%20addresses%20this,disadvantages%2C%20such%20as%20lack%20of">groovetechnology</a><br/>
