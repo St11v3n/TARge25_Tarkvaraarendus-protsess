@@ -21,7 +21,7 @@
         </p><br/>
 
         <p>
-            Kontrollimis faas viitab tootearendusprotsessi hindamise praktikale, kus tagatakse meeskonna vastavus<br/>
+            Kontrollimis etappides viitab tootearendusprotsessi hindamise praktikale, kus tagatakse meeskonna vastavus<br/>
             kehtestatud nõuetele. Kontrollimis faasil on viis etappe:
         </p><br/>
 
@@ -56,7 +56,7 @@
         </p><br/>
 
         <p>
-            Valideerimis faasis võetakse kasutusele dünaamilist analüüsimist ning testimist, et tagada tarkvara toode kohtuks kliendi<br/>
+            Valideerimis etappides võetakse kasutusele dünaamilist analüüsimist ning testimist, et tagada tarkvara toode kohtuks kliendi<br/>
             vajadustele ning ootustele. Selles faasis on neli etappe:
         </p><br/>
 
@@ -89,14 +89,74 @@
         </p><br/>
 
         <p>
-            W- mudel on alamvariant, mis keskendub spetsiaalselt tooteriskide tuvastamisele ja punktidele, kus testimine on kõige tõhusam. W-mudel<br/>
-            tagab, et testimine algab projekti esimesest päevast, et arendajad saaksid vigasid jälgida tarkvaraarenduse algstaadiumis.
+           W-mudelis, testimised toimuvad kohe algusest peale koos arendus etappidega.
+        </p><br/>
+
+        <p>
+            Sawtooth mudelis koostakse prototüüpe ning näidatakse kliendile valideerimiseks.
+        </p><br/>
+
+        <p>
+            Sharktooth mudelis samut koostakse prototüüpe, kuid selles mudelis keskendub ka juht,kelel kaudu tulevad uued tegevused.
+        </p><br/>
+
+        <h2>Milline näeb välja arendusmudel joonisena?</h2><br/>
+
+        <p>
+            Joonis: <img src="../pildid/V-model development.webp">
         </p><br/>
 
         <h2>Viited:</h2><br/>
 
+        <h2>Mis on arendusmudeli tähtsaim omadus, ja miks?</h2><br/>
+
+        <p>
+            Arendusmudeli tähstaim omadus on vigade ennetamine ning tuvastamine, kuna mudelis on palju tegevusi, mis tagastavad et ei oleks mingi vigasid toodega.
+        </p><br/>
+
+        <h2>Võta arendusmudel kokku Heade ja Veade tabelina.</h2><br/>
+
+        <table>
+            <thread>
+                <tr>
+                    <th>Head:</th>
+                    <th>Vead:</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>Lihtne ning arusaadav;</td>
+                    <td>Ei kohane hästi muudetustega;</td>
+                </tr>
+
+                <tr>
+                    <td>Vigade ennetamine</td>
+                    <td>Kõrge risk ning ebakindlus</td>
+                </tr>
+
+                <tr>
+                    <td>Täpne edu jälgimine;</td>
+                    <td>Aega nõutav</td>
+                </tr>
+
+                <tr>
+                    <td>Muudatuste hallatamine;</td>
+                    <td>Ei toeta iteratsioone;</td>
+                </tr>
+
+                <tr>
+                    <td>Etappe läbitakse ükshaaval;</td>
+                    <td>Ei ole sobilik keeruliste projektide jaoks.</td>
+                </tr>
+            </tbody>
+        </table>
+
         <p>
             V mudeli alamvariantid: <a href="https://www.ijarcs.info/index.php/Ijarcs/article/view/37#:~:text=The%20important%20thing%20is%20this,V%20Model;%20Sawtooth%20&%20Shartooth%20model">ijarcs</a><br/>
+            W mudel: <a href="https://shiftasia.com/column/difference-between-v-model-and-w-model-in-software-testing/">shiftasia</a><br/>
+            V-mudel: <a href="https://www.geeksforgeeks.org/software-engineering/software-engineering-sdlc-v-model/">geeksforgeeks</a><br/>
+            V-mudel süsteemi disain: <a href="https://www.geeksforgeeks.org/software-engineering/software-engineering-sdlc-v-model/">wikipedia</a><br/>
+            
         </p><br/>
 </body>
 </html>
