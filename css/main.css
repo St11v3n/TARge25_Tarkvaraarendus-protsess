@@ -1,0 +1,53 @@
+/*
+     Changes entire webpage globally parametrs.
+*/
+body 
+{
+    /* COLORS BRRRR */
+    background-color: rgb(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    /* Changes font name and family.. duh */
+    font-family: Cambria;
+}
+
+/*
+     Changes only the <a> links look which in our case is span attributes spawned
+     Through the javascript code we made. 
+*/
+.rainbowtext span
+{
+    /* Makes font BOLD */
+    font-weight: bold;
+    /* Changes font size INCREASING THIS BAD BOY BABYYYY */
+    font-size : 50px;
+}
+
+/*
+     Changes span text parametrs.
+*/
+.text span
+{
+    font-size : 50px
+}
+
+/*
+     Changes image parametrs-
+*/
+img
+{
+    /* Animation/movement speed */
+    transition: transform 0.7s ease;
+    /* Picture size width/height */
+    width: 702px;
+    height: 432px;
+}
+
+
+/*
+     Changes image parametrs only when mouse cursor is hovereed on it.
+*/
+img:hover
+{
+    /* Changes size of image and rotates it */
+    transform: scale(1.2) rotate(360deg);
+}
