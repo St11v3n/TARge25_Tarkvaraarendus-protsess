@@ -11,6 +11,17 @@ a {
     font-family: Impact, serif;
     font-size: 30px;
     font-weight: 1000;
-}   
+    transition: color 0.3s ease;
+}
 
+a:hover {
+    color: white;
+}
 
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(0.8);
+}
